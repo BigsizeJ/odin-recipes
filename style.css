@@ -1,13 +1,21 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url("recipes/img/bg.png");
+    background-image: url("resources/img/bg.png");
     background-attachment: fixed;
     background-size: cover;
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url("resources/font/OpenSans_RegBold.ttf");
+}
+
 header{
     text-align: center;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .content{
@@ -31,6 +39,12 @@ header{
     border: 5px solid rgba(119, 96, 96, 1);
 }
 
+
+.left, .mid, .right{
+    width: 300px;   
+    word-wrap: break-word;
+}
+
 .left img, .mid img, .right img{
     width: 300px;
     height: 400px;
@@ -39,4 +53,7 @@ header{
 .left p, .mid p, .right p{
     font-size: 20px;
     text-align: center;
+    font-family: "Open Sans";
+    font-weight: 400;
 }
+
