@@ -1,14 +1,14 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("resources/font/OpenSans_RegBold.ttf");
+}
+
 body{
     margin: 0px;
     padding: 0px;
     background-image: url("resources/img/bg.png");
     background-attachment: fixed;
     background-size: cover;
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("resources/font/OpenSans_RegBold.ttf");
 }
 
 header{
@@ -23,7 +23,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    transition: 1s;
     margin-top: 50px;
     gap: 50px;
 }
@@ -38,11 +37,13 @@ header{
     transform: scale(1.02);
     border: 5px solid rgba(119, 96, 96, 1);
 }
-
-
 .left, .mid, .right{
-    width: 300px;   
-    word-wrap: break-word;
+    padding: 0px;
+    width: 300px;
+}
+
+.mid p{
+    margin:auto;
 }
 
 .left img, .mid img, .right img{
@@ -51,9 +52,20 @@ header{
 }
 
 .left p, .mid p, .right p{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-family: "Open Sans";
     font-weight: 400;
 }
 
+footer{
+    font-family: "Open Sans";
+    font-weight: 700;
+    margin-top: 50px;
+    background-color: rgba(119, 96, 96, 0.5);
+    padding: 5px 5px 0px 5px;
+}
+
+footer img{
+    width: 5%;
+}
