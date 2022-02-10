@@ -1,6 +1,9 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url("recipes/img/bg.png");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header{
@@ -13,7 +16,19 @@ header{
     align-items: center;
     justify-content: center;
     transition: 1s;
+    margin-top: 50px;
     gap: 50px;
+}
+
+.content a img{
+    border: 5px solid rgba(119, 96, 96, 0.5);
+    border-radius: 10px;
+}
+
+.content a img:hover{
+    transition: 500ms;
+    transform: scale(1.02);
+    border: 5px solid rgba(119, 96, 96, 1);
 }
 
 .left img, .mid img, .right img{
@@ -22,5 +37,6 @@ header{
 }
 
 .left p, .mid p, .right p{
+    font-size: 20px;
     text-align: center;
 }
